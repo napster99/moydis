@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap>
+
+	<typeAlias alias="UserInfo" type="com.moydis.entity.UserInfo" />
+
+	<select id="selectAllUsers" resultClass="UserInfo">
+
+		select * from user_info
+
+	</select>
+
+
+	<select id="selectUser" resultClass="UserInfo">
+
+		select * from user_info where account=#account#
+
+ </select>
+
+
+
+	<insert id="insertUser" parameterClass="UserInfo">
+
+		insert into user_info(id,account,password,nickname,ranks,userInfo)
+		
+		 values
+		 
+		(null,#account#,#password#,#nickname#,#ranks#,#userInfo#)
+
+	 </insert>
+	 
+	 
+	<insert id="insertUserCard">
+		insert into user_card(id,userId,cardId,cardTitle,cardContent,sendTime)
+		 values
+		(null,#userId#,#cardId#,#cardTitle#,#cardContent#,NOW())
+	</insert>
+
+
+	<!-- update id="updateUser" parameterClass="User">
+
+		update t_user set
+		username = #username#,password=#password#
+
+		where id=#id#
+
+  </update>
+
+
+	<delete id="deleteUser" parameterClass="int">
+
+		delete from t_user where
+		id=#id#
+
+ </delete-->
+
+
+
+
+</sqlMap>
+

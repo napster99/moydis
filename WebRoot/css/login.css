@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+.outer {
+	display:none;
+	width: 500px; height : 210px;
+	border: 1px solid gray;
+	z-index:9999;
+	margin-left: 300px;
+	position:absolute;
+	margin-top: 200px;
+	background: #A6A6A6;
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 0px 0px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+.accountCls {
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.accountCls input {
+	height: 30px;
+	width: 200px;
+	font-size: 20px;
+	border: none;
+	border-radius: 7px 7px 7px 7px;
+}
+
+.loginToolsCls {
+	color: #fff;
+}
+
+.loginToolsCls a {
+	margin-left: 20px;
+}
+
+.loginBtnCls input {
+	margin-top: 20px;
+	color: #fff;
+	border: none;
+	width: 80px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 35px;
+	background: -moz-linear-gradient(top, #fff, gray);
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(gray)
+		); /*chrome Safari*/
+	background: -o-linear-gradient(top, #fff, gray);
+	border-radius: 5px 5px 5px 5px;
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 0px 0px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+	
+}
+
+#loginFailTip{
+	color:#ff0000; 
+	position:absolute; 
+	left:200px; 
+	bottom:0; 
+	display:none;
+}	

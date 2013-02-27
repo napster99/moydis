@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+body {
+	
+	font-size : 16px;
+}
+
+#content .contentDiv{
+	width:48%; 
+	height:200px;
+	margin:10px;
+	float:left;
+}
+
+#content .contentDiv .contentTitle{
+	background: #D3D3D3; 
+	height:30px;
+	line-height:30px;
+	color:gray;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+#content, .contentDiv , .contentTitle{
+	border-radius: 5px 5px 5px 5px;
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 0px 0px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+	border:1px solid gray;
+	background: #FDFDFD;
+}
+
+#content .contentDiv .contentContent{
+	position: relative; 
+	height:80%;	
+	cursor: default;
+}
+
+.contentContent li span[name=hotCardRank]{
+	color:gray;
+}
+
+.contentContent li span[name=time]{
+	float:right;
+}
+
+.contentContent li span[name=clickNum]{
+	
+}
+/* 热帖排行榜 nickname  */
+.contentContent li span[name=hotnickname]{
+	float:right;
+	color:blue;
+	margin-right:20px;
+}
+	
+.contentContent li span[name=numSpan]{
+	float:right;
+}
+
+#content .contentDiv .contentContent ul{
+	margin:0;
+	padding:10px;
+}
+
+#content .contentDiv .contentContent ul li{ 
+	
+	height:25px;
+	line-height: 25px;
+	border-bottom:1px dashed #808080;	
+	overflow: hidden;
+	
+}
+
+#content .contentDiv .contentContent ul li:hover{
+	background: #EFEFEF;	
+}
+
+#content .contentDiv .contentContent ul li span[name=nickname]{
+	color:blue;
+}
+
+#content .contentDiv .contentContent ul li a[name=cardTitle]{
+	color:blue;
+	font-family: "Microsoft Yahei"; 
+}
+
+#content .contentDiv  .contentLoading{
+	position: absolute; 
+	top:50%; 
+	left:50%; 
+	margin-top:-16px; 
+	margin-left:-16px; 
+}
+
+
+

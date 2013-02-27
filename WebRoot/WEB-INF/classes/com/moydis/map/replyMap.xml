@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap>
+	
+	<typeAlias alias="CardReply" type="com.moydis.entity.CardReply" />
+
+	<select id="getReplyCount" resultClass="java.lang.Integer">
+		select count(*) from card_reply where cardId = #cardId#;
+	</select>
+	
+	<select id="getCardReplyByCardId" resultClass="CardReply">
+		select * from card_reply where cardId = #cardId#;
+	</select>
+	
+	<insert id="insertReplyCard">
+		insert into card_reply(id,userId,cardId,replyContent,replyTime)
+		
+		 values
+		 
+		(null,#userId#,#cardId#,#replyContent#, NOW())
+	</insert>
+	
+	<update id="replyAddOne" parameterClass="java.util.Map">
+		 update  card_info set replyNum  = #curCount# where cardid = #cardId#
+	</update>
+	
+</sqlMap>
+

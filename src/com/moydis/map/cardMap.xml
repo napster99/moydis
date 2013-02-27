@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap>
+	
+	<typeAlias alias="CardInfo" type="com.moydis.entity.CardInfo" />
+
+	<select id="selectNewsCards" resultClass="CardInfo">
+
+		select * from card_info order by sendTime desc limit #count#
+
+	</select>
+	
+	<select id="selectAllCards" resultClass="CardInfo">
+		
+		select * from card_info
+		
+	</select>
+	
+	<select id="selectCard" resultClass="CardInfo">
+		
+		select * from card_info where cardId = #cardId#
+		
+	</select>
+	
+	<select id="selectReplyCount" resultClass="CardInfo">
+		select * from card_info order by replyNum desc , clickNum desc limit #count#;
+	</select>
+	
+	
+	<insert id="insertCardInfo">
+		insert into card_info(id,userId,cardId,clickNum,replyNum,cardTitle,cardContent,sendTime)
+		 values
+		(null,#userId#,#cardId#,0,0,#cardTitle#,#cardContent#,NOW())
+	</insert>
+	
+	
+</sqlMap>
+

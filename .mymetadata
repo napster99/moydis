@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="moydis"
+  id="myeclipse.1350735085957"
+  context-root="/moydis"
+  j2ee-spec="5.0"
+  archive="moydis.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

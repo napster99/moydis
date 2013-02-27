@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="./css/base.css" rel="stylesheet" type="text/cs" />
+		<link href="./css/head.css" rel="stylesheet" type="text/css" />
+		<link href="./css/common.css" rel="stylesheet" type="text/css" />
+		<link href="./css/login.css" rel="stylesheet" type="text/css" />
+		<link href="./css/register.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="headDiv">
+			陌芽论坛
+			<input name="manage" type="button" value="后台管理" />
+			<input name="register" type="button" value="用户注册" />
+			<input name="login" type="button" value="用户登录" />
+
+			<label id="showNickname">
+				游客
+			</label>
+			<img src="./images/vistor.png" />
+		</div>
+		<div class="titleDiv">
+			<ul class="titleUL clearfix">
+				<li type="index" class="liContent firstli">
+					首 页
+				</li>
+				<li class="liSebLine"></li>
+				<li type="cardIndex" class="liContent firstli">
+					帖子专区
+					<div id="cardIndex" class="nap" style="display: none">
+						<ul>
+							<li name="newsCard">
+								最新帖子
+							</li>
+							<li name="hotCard">
+								热门帖子
+							</li>
+							<li name="sendCard">
+								我要发帖
+							</li>
+						</ul>
+					</div>
+
+				</li>
+				<li class="liSebLine"></li>
+				<li type="alliance" class="liContent firstli">
+					陌芽联盟
+				</li>
+				<li class="liSebLine"></li>
+				<li type="myHome" class="liContent firstli ">
+					我的家园
+				</li>
+				<li class="liSebLine"></li>
+				<li type="about" class="liContent firstli">
+					关于陌芽
+				</li>
+				<li id="timer" class="liTimer">
+					2012-10-11 23:06
+				</li>
+			</ul>
+
+
+
+
+		</div>
+		<!--S 登陆模块 -->
+		<div id="loginBlock" class="outer">
+
+			<div class="accountCls">
+				<label>
+					账号：
+				</label>
+				<input type="text" placeholder="输入登录账号" />
+				<em></em>
+			</div>
+
+			<div class="accountCls">
+				<label>
+					密码：
+				</label>
+				<input type="password" placeholder="输入登录密码" />
+				<em></em>
+			</div>
+
+			<div class="loginToolsCls">
+				<a name="forgetPwd" href="javascript:void(0)" style="color: #fff">忘记密码？</a>
+				<a name="register" href="javascript:void(0)" style="color: #ff0000">新用户注册</a>
+			</div>
+
+			<div id="loginFailTip">
+				账号或密码有误..
+			</div>
+
+			<div class="loginBtnCls">
+				<input id="loginBtn" type="button" value="登录" />
+
+				<input id="loginCancelBtn" type="button" value="取消" />
+
+			</div>
+		</div>
+		<!-- E登录模块 -->
+
+		<!-- S用户注册模块 -->
+		<div id="registerBlock" style="display: none;">
+
+			<div class="accountCls">
+				<label>
+					昵&nbsp;&nbsp;&nbsp;&nbsp;称：
+				</label>
+				<input isOk="false" name="nickname" type="text"
+					placeholder="输入要自己喜欢的名字" />
+				<em>*0~10个字符*</em>
+			</div>
+
+			<div class="accountCls">
+				<label>
+					账&nbsp;&nbsp;&nbsp;&nbsp;号：
+				</label>
+				<input isOk="false" name="account" type="text"
+					placeholder="输入要注册的账号" />
+				<em>*6~12字符*</em>
+				<img style="display: none;" src="./images/load.gif" />
+			</div>
+
+			<div class="accountCls">
+				<label>
+					密&nbsp;&nbsp;&nbsp;&nbsp;码：
+				</label>
+				<input isOk="false" name="pwd" type="password" placeholder="输入注册密码" />
+				<em>*请输入6~10位数密码*</em>
+			</div>
+
+			<div class="accountCls">
+				<label>
+					确认密码：
+				</label>
+				<input isOk="false" name="pwdAgain" type="password"
+					placeholder="请再次输入密码" />
+				<em></em>
+			</div>
+
+			<div class="accountCls">
+				<label>
+					等&nbsp;&nbsp;&nbsp;&nbsp;级：
+				</label>
+				<input isOk="true" type="password" placeholder="一级（初学弟子）" disabled />
+			</div>
+
+			<div class="accountCls">
+				<label style="float: left;">
+					个人简介：
+				</label>
+				<textarea placeholder="在此写下个人的简单介绍，让更多的芽友认识你...."></textarea>
+			</div>
+
+			<div class="regBtnCls">
+				<input name="register" type="button" value="注册" />
+				<input name="reset" type="button" value="置空" />
+				<input name="cancel" type="button" value="取消" />
+			</div>
+		</div>
+		<!--  E用户注册模块 -->
+
+		<!-- S 注册结果 -->
+		<div id="registerResultBlock" style="display: none;">
+
+			<div class="accountCls">
+				<label>
+					恭喜您，注册成功！
+				</label>
+			</div>
+			<br />
+			<div class="accountCls">
+				<label>
+					您的账号是：
+				</label>
+				<label id="regResultAccount">
+					436532234
+				</label>
+				<br />
+				<br />
+				<label>
+					您的密码是：
+				</label>
+				<label id="regResultPwd">
+					436532234
+				</label>
+			</div>
+			<div class="regBtnCls">
+				<input id="goMoydis" type="button" value="进入论坛" />
+
+				<input id="goQues" type="button" value="设置密保" />
+
+			</div>
+
+			<div class="tip">
+				温馨提示：为了您的账号安全请设置密保问题,
+				<br />
+				&nbsp;&nbsp;来更换密码及找回密码....
+			</div>
+		</div>
+		<!-- E注册结果 -->
+
+		<div id="J_tip" class="publishTip" style="display: none;">
+			发表成功！
+		</div>
+		
+		<div style="display:none; position:fixed; right:0px ; cursor:pointer; bottom:10ox; width:40px;  height:50px;  background:gray; color:#fff; font-weight:bold;" >TOP</div>
+	</body>
+	<script type="text/javascript" src="./js/lib/jquery-1.4.2.min.js">
+</script>
+	<script type="text/javascript" src="./js/lib/Util.js">
+</script>
+	<script type="text/javascript" src="./js/common/head.js">
+</script>
+	<script type="text/javascript" src="./js/login.js">
+</script>
+
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=3&amp;pos=right&amp;uid=0" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END -->
+</html>

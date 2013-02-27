@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+* {
+	font-family: "Microsoft Yahei";
+}
+
+.cardIndex {
+	width: auto;
+	border: 1px solid gray;
+	margin: auto 100px;
+	background: #FDFDFD;
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 0px 0px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+	border-radius: 10px 10px 10px 10px;
+}
+
+.cardTitleNav {
+	margin: 5px auto 10px 20px;
+}
+
+.cardMain {
+	border: 1px solid gray;
+	width: auto;
+	margin: 10px 20px;
+}
+
+.cardLeftNav { /*border-right:1px solid gray;*/
+	float: left;
+	width: 150px;
+	/*border-radius:10px 10px 10px 10px;*/
+	background: #F8F8F8;
+	text-align: center;
+}
+
+.cardShowContent {
+	width: 930px;
+	min-height: 1000px;
+	float: left;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+ul,li {
+	list-style: none;
+}
+
+ul {
+	padding: 0px;
+}
+
+.cardLeftNav ul li {
+	border-bottom: 1px dashed gray;
+	height: 35px;
+	line-height: 35px;
+	cursor: default;
+}
+
+.cardShowContent ul li {
+	border-bottom: 1px dashed gray;
+	display: block;
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.cardShowContent dl {
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 580px;
+}
+
+.cardShowContent dt {
+	width: 600px;
+}
+
+.cardShowContent dd {
+	margin-left: 0px;
+	margin-top: 10px;
+	width: 600px;
+}
+
+.cardIndex .cardShowContent  img {
+	width: 80px;
+	height: 80px;
+	border: 1px solid gray;
+	border-radius: 5px 5px 5px 5px;
+	padding: 2px;
+	margin-left: 10px;
+	float: left;
+}
+
+.cardStutas {
+	margin-left: 30px;
+	color: red;
+	position: absolute;
+	bottom: 10px;
+}
+
+.cardStutas span {
+	margin-right: 30px;
+	color: gray;
+}
+
+.cardMain .cardDiv {
+	border-bottom: 1px solid gray;
+	margin-bottom: 50px;
+	margin-top: -1px;
+	border-top: 1px solid gray;
+}
+
+.cardMain .leftDiv {
+	float: left;
+	background: #F7F7F7;
+	width:190px;
+	border-right: 1px solid gray;
+	padding: 5px 5px 60px 5px;
+}
+
+.cardMain .leftDiv p {
+	line-height: 1.0;
+	font-family: "Microsoft Yahei";
+}
+
+.card-head-img {
+	margin: 15px auto 5px;
+	display: block;
+	width:100px;
+	height: 100px;
+}
+
+.card-nickname {
+	text-align: center;
+}
+
+.cardMain .rightDiv {
+	float: left;
+	width: 880px;
+}
+
+.cardMain .rightDiv .floorInfo {
+	border-bottom: 1px solid gray;
+}
+
+.cardMain .rightDiv .floorInfo .replyCls {
+	margin-left: 20px;
+}
+
+.cardMain .rightDiv .floorInfo .floorCls {
+	float: right;
+	margin-right: 20px;
+	color: tan;
+}
+
+.cardMain .rightDiv .cardContent {
+	padding: 10px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.accountCls {
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.accountCls input,.accountCls textarea {
+	height: 30px;
+	width: 200px;
+	font-size: 20px;
+	border: none;
+	border-radius: 7px 7px 7px 7px;
+	color: gray;
+}
+
+.accountCls textarea {
+	height: 100px;
+	width: 350px;
+}
+
+.regBtnCls {
+	margin-left: 130px;
+}
+
+.regBtnCls input {
+	margin-top: 20px;
+	color: #fff;
+	border: none;
+	width: 80px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 35px;
+	background: -moz-linear-gradient(top, #fff, gray);
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(gray)
+		); /*chrome Safari*/
+	background: -o-linear-gradient(top, #fff, gray);
+	border-radius: 5px 5px 5px 5px;
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 0px 0px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+}
+
+
+.reply-textarea {
+	height: 200px;
+	width: 745px;
+	border: 1px solid gray;
+	padding: 10px;
+	resize: none;
+	font-size: 20px;
+	color: gray;
+	margin:35px;
+}
+
+.reply-btn{
+	padding-bottom:30px;
+	padding-left:270px;
+}
+
+.reply-btn input {
+	color: #fff;
+	border: none;
+	width: 80px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 35px;
+	background: -moz-linear-gradient(top, #fff, gray);
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(gray)
+		); /*chrome Safari*/
+	background: -o-linear-gradient(top, #fff, gray);
+	border-radius: 5px 5px 5px 5px;
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 0px 0px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+}
+
+.reply-left-div{
+	width:190px;
+	height:275px;
+}
+
+.wb{
+	word-wrap: break-word;
+	word-break: break-all;
+}	
+
+/*.cardDiv .card-left-title{padding:0; height: 50px; line-height:50px; }
+
+.cardDiv .card-right-title{line-height:50px;}
+
+*/.click-num{color:red;}
+
+.reply-num{ float:right; margin-right:20px;}
+
+.reply-num span{color:red;}
+
+.card-title-name{margin-left:20px; display:inline-block; width:850px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; } 
+
+
+
+

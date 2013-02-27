@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+body {
+	margin: 0px;
+	filter: alpha(opacity = 100 finishopacity = 100 style = 0 startx = 0, starty = 0
+		) progid : DXImageTransform.Microsoft.gradient ( startcolorstr = white,
+		endcolorstr = gray, gradientType = 0 );
+	-ms-filter: alpha(opacity = 100 finishopacity = 5100 style = 0 startx = 0, starty =
+		0) progid : DXImageTransform.Microsoft.gradient ( startcolorstr =
+		white, endcolorstr = gray, gradientType = 0 ); /*IE8*/
+	background: -moz-linear-gradient(top, #fff, gray);
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(gray)
+		); /*chrome Safari*/
+	background: -o-linear-gradient(top, #fff, gray); /* 线性渐变在Opera下的应用 */
+	padding: 0px 10px 0px 10px;
+}
+
+
+.headDiv {
+	width: auto;
+	height: 70px;
+	line-height: 70px;
+	border: 1px solid gray;
+	border-radius: 5px 5px 5px 5px;
+	text-align: left;
+	-ms-filter: alpha(opacity = 100 finishopacity = 5100 style = 0 startx = 0, starty =
+		0) progid : DXImageTransform.Microsoft.gradient ( startcolorstr =
+		white, endcolorstr = gray, gradientType = 0 ); /*IE8*/
+	background: -moz-linear-gradient(top, #fff, gray);
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(gray)
+		); /*chrome Safari*/
+	font-family: "Microsoft Yahei";
+	font-size: 50px;
+	color: gray;
+	text-shadow: 3px 4px 6px tan;
+	-webkit-box-shadow: 0px 0px 10px #909090; /*safari或chrome*/
+}
+
+.headDiv img{
+	float:right;
+	margin-top:8px;
+	width:40px;
+	height:40px;
+	border:2px solid #fff;
+	border-radius:5px 5px 5px 5px;
+}
+
+.headDiv label{
+	float:right;
+	margin-right:20px;
+	font-size: 15px;
+	color:#020202;
+}
+
+.headDiv input {
+	float: right;
+	border: none;
+	margin: 10px 10px;
+	color: #fff;
+	width: 80px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 15px;
+	background: -moz-linear-gradient(top, #fff, gray);
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(gray)
+		); /*chrome Safari*/
+	background: -o-linear-gradient(top, #fff, gray);
+	border-radius: 5px 5px 5px 5px;
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 0px 0px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+}
+
+
+.titleDiv {
+	width: auto;
+	height: 35px;
+	border: 1px solid gray;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background: -moz-linear-gradient(top, #fff, gray);
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(gray)
+		); /*chrome Safari*/
+	background: -o-linear-gradient(top, #fff, gray);
+	border-radius: 5px 5px 5px 5px;
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 0px 0px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+}
+
+
+
+.middleContentDiv {
+	width: auto;
+	height: 100px;
+	border: 1px solid gray;
+	border-radius: 5px 5px 5px 5px;
+	font-family: "Microsoft Yahei";
+	-webkit-box-shadow: 0px 0px 10px #909090; /*safari或chrome*/
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+}
+
+ul,li {
+	list-style: none;
+}
+
+.liContent {
+	width: 130px;
+}
+
+.liSebLine {
+	border-left: 1px solid gray;
+	height: 25px;
+	margin-top: -10px;
+	float:left;
+}
+
+.titleUL li.firstli {
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	margin-top: -15px;
+	margin-left: 5px;
+	text-align: center;
+	font-family: "Microsof Yahei";
+	color: #fff;
+	font-weight: bold;
+	position: relative;
+}
+
+.titleUL .liContent:hover {
+	background: gray;
+	border-radius: 15px 15px 15px 15px;
+	cursor: pointer;
+	
+	-moz-box-shadow: 2px 2px 10px tan; /*firefox*/
+	-webkit-box-shadow: 2px 2px 10px tan; /*safari或chrome*/
+	box-shadow: 2px 2px 10px tan; /*opera或ie9*/
+}
+
+.nap {
+	position: absolute;
+	width: 130px;
+	height: 100px;
+	left: 0px;
+	top: 40px;
+	border: 1px solid gray;
+	background: #A6A6A6;
+	z-index: 9999;
+}
+
+.nap ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nap ul li {
+	border-bottom: 1px dotted gray;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+
+.nap ul li:hover {
+	background: gray;
+	border-radius: 15px 15px 15px 15px;
+	cursor: pointer;
+	color: tan;
+	-moz-box-shadow: 0px 0px 10px tan; /*firefox*/
+	-webkit-box-shadow: 0px 0px 10px tan; /*safari或chrome*/
+	box-shadow: 0px 0px 10px tan; /*opera或ie9*/
+}
+
+#timer{
+	width:350px; 
+	float:right; 
+	color:gray;
+}

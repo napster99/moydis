@@ -1,0 +1,17 @@
+@charset "utf-8";
+/**
+*@name: css样式重置
+*@author: zxj
+*@date: 20120902
+*/
+/*common css*/
+.clearfix:before,.clearfix:after {content:"";display:table}
+.clearfix:after {clear:both;}
+.clearfix {zoom:1; clear:both}
+
+/* Arial,Helvetica,sans-serif;*/
+a{text-decoration:none;outline:none;color:#000;}
+a:hover{color:red; text-decoration:underline;}
+
+
+
